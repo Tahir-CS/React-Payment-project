@@ -1,42 +1,35 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Payment form styles: Engineers keep forms simple and accessible. */
+.payment-form {
+  max-width: 400px; /* Limits width for focus. */
+  margin: 20px auto; /* Centers and adds space. */
+  padding: 20px; /* Internal padding. */
+  background: white; /* White background for contrast. */
+  border-radius: 8px; /* Soft edges. */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow. */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.payment-form label {
+  display: block; /* Stacks label above input. */
+  margin-bottom: 10px; /* Space. */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.payment-form button {
+  width: 100%; /* Full width for usability. */
+  padding: 10px; /* Comfortable click area. */
+  background: #007bff; /* Matches theme. */
+  color: white; /* Contrast. */
+  border: none; /* Clean. */
+  border-radius: 5px; /* Soft. */
+  cursor: pointer; /* Clickable. */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.payment-form button:disabled {
+  background: #ccc; /* Gray when disabled. */
+  cursor: not-allowed; /* Prevents clicks. */
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Enhanced error/success messages: Engineers style feedback for clarity and accessibility. */
+.payment-form p {
+  margin-top: 10px;
+  font-weight: bold; /* Makes messages stand out. */
 }
